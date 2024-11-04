@@ -1,0 +1,39 @@
+/* Generelle stiler */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Tittel stil */
+h1 {
+    color: #4CAF50; /* Grønn farge */
+    text-align: center;
+}
+
+/* Om meg seksjon */
+.about {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Alder og bosted stil */
+.info {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Linker stil */
+a {
+    color: #2196F3; /* Blå farge */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

@@ -1,8 +1,7 @@
 /* Generelle stiler */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
+
     margin: 0;
     padding: 20px;
 }
@@ -36,4 +35,20 @@ a {
 
 a:hover {
     text-decoration: underline;
+} 
+section {
+    display: flex;
+    gap: 5px;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    background-color: #3cd4e2;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+}
+.nav a{
+    color: #ffffff;
+    margin: 10px;
 }

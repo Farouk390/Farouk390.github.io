@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #636562;
+    padding: 20px;
+    margin: 0;
+  }
+  
+  /* HOVEDOVERSKRIFT */
+  h1 {
+    margin-top: 10px;
+    padding: 20px;
+    color: white;
+  }
+  
+  /* INNHOLD RUNDT HJULET */
+  #wheelContainer {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  
+  /* CANVAS: STORLEK, RUNDE KANTER */
+  canvas {
+    border: 2px solid #ff0303;
+    border-radius: 50%;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* PEKEREN (PILEN) PÅ TOPPEN AV HJULET */
+  #pointer {
+    position: absolute;
+    top: -50px;       /* Plasser pilen over hjulet */
+    left: 50%;
+    transform: translateX(-50%);
+    border-top: 50px solid rgb(0, 255, 247);  /* Selve pilen */
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+border-radius: 20px;
+
+  }
+  
+  /* KNAPPER OG INPUT-FELT */
+  .controls {
+    margin-top: 20px;
+  }
+  
+  input[type="text"] {
+    padding: 6px;
+    font-size: 1rem;
+    border-radius: 10px;
+    background-color: rgb(0, 251, 255);
+  
+  }
+  
+  button {
+    padding: 6px 12px;
+    font-size: 1rem;
+    margin: 6px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: rgb(0, 229, 255);
+  }

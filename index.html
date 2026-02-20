@@ -1,52 +1,170 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="no">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-<link rel="stylesheet" href="/css/styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Min portefølgje - Farouk Mohamad Albitar</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#e6f2ff;
+    scroll-behavior:smooth;
+}
+
+header{
+    background:#0066cc;
+    color:white;
+    padding:25px;
+    text-align:center;
+}
+
+nav{
+    background:white;
+    padding:15px;
+    text-align:center;
+    position:sticky;
+    top:0;
+    box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+nav a{
+    margin:10px;
+    text-decoration:none;
+    color:#0066cc;
+    font-weight:bold;
+}
+
+section{
+    padding:60px 20px;
+    max-width:1000px;
+    margin:auto;
+}
+
+h2{
+    text-align:center;
+    color:#0066cc;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+    gap:20px;
+    margin-top:20px;
+}
+
+.gallery img{
+    width:80%;              
+    height:160px;           
+    object-fit:cover;
+    border-radius:8px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#0066cc;
+    color:white;
+    margin-top:40px;
+}
+</style>
 </head>
+
 <body>
-    <nav class="nav">
-        <a href="tekno.html">Teknologiforståelse</a>
-        <a href="Produksjon og historie fortelling.html">Produksjon og historie fortelling</a>
-        
-<a href="projects.html"> prosjekter</a>
 
+<header>
+    <h1>Min portefølgje</h1>
+    <p>Farouk Mohamad Albitar</p>
+</header>
 
-    </nav>
+<nav>
+    <a href="#teknologi">Teknologiforståelse</a>
+    <a href="#produksjon">Produksjon og Historiefortelling</a>
+    <a href="#engelsk">Engelsk</a>
+    <a href="#naturfag">Naturfag</a>
+    <a href="#konsept">Konseptutvikling</a>
+    <a href="#yff">YFF</a>
+    <a href="#matematikk">Matematikk</a>
+    <a href="#gym">Gym</a>
+</nav>
+
+<section id="teknologi">
+    <h2>Teknologiforståelse</h2>
+    <p>Her viser eg prosjekt og arbeid eg har gjort i teknologi.</p>
+    <div class="gallery">
+        <img src="Skjermbilde 2026-02-19 131400.png">
+        <img src="Skjermbilde 2025-08-25 145317.png">
+    </div>
+</section>
+
+<section id="produksjon">
+    <h2>Produksjon og Historiefortelling</h2>
+    <p>Her viser eg arbeid eg har gjort i produksjon og historiefortelling.</p>
+    <div class="gallery">
+        <img src="Skjermbilde 2026-02-20 090113.png">
+        <img src="Skjermbilde 2025-10-22 112315.png">
+        <img src="Skjermbilde 2026-02-09 085314.png">
+        <img src="Skjermbilde 2026-02-20 103242.png">
+    </div>
+</section>
+
+<section id="engelsk">
+    <h2>Engelsk</h2>
+    <p>I engelsk har vi jobba med New Zealand og UK og oppgåver.</p>
     
-    <h1>Min portefølje</h1>
-    <p> Eg heiter Farouk</p>
-    <p>Eg bur på kvinnherad</p>
-    <p>Eg har budd i Norge 9 år </p>
-    <p>Eg kom til Norge 2016</p>
-    <p>Eg er 15 år gammal</p>
-    <p>Eg har 3 søstre</p>
-    <p>Eg har ein far og 1 mor</p>
-    <p>Eg går på Vollyball</p>
-    <p>Linja eg går på er IT</p>
-    <p>Eg synest det er veldig kjekt å gå på denne Linjen</p> 
-    <section> 
-        
-    <img src="images/Bilde Vissitkort.png" alt="visitkort" width="200px" height="200px">
-    <p><img src="images/FaroukTinkerkad.png" alt="Bilde fra tinkercad Farouk" width="200px" height="200px"></p>
-    <img src="images/Farouk Tinkercad Sverd.png" alt="Bilde fra Tinkercad Sverd"width="200px" height="200px"></p>
-    <img src="/images/proskjekt produksjon og historiefortelling (1).jpg " alt="av bokomslag" width="200px" height="200px">
-    <img src="images/GetImage.jpg"width="200px" height="200px" >
-   <video src="DJI_0066_1.mp4"controls width="200px" height="200px" ></video>
-   <img src="images/Skjermbilde 2025-03-10 142510.png" width="280px" height="280px">
-   <img src="images/Skjermbilde 2025-03-10 143246.png" width="200px" height="200px">
- </section>
-<div>
+    </div>
+</section>
 
+<section id="naturfag">
+    <h2>Naturfag</h2>
+    <p>I naturfag hadde vi VR-brille plakat, forsøk og skreiv rapport.</p>
+   
+    </div>
+</section>
 
-   <h3>AI prosjekt</h3>
-    <ul>
-    <li><a href="spin the wheel/spin.html">spinn the wheel</a></li>
-    <li>  <a href="memory/Farooq.html">memory</a></li>
-   </ul> 
+<section id="konsept">
+    <h2>Konseptutvikling</h2>
+    <p>Her viser eg idear og prosjekt i konseptutvikling.</p>
+    <div class="gallery">
+        <img src="Skjermbilde 2026-02-20 102857.png">
+        <img src="Skjermbilde 2026-02-20 103023.png">
+    </div>
+</section>
+
+<section id="yff">
+    <h2>YFF</h2>
+    <p>I YFF har vi jobba med jobbintervju og plakatar og bruke kamera.</p>
+    <div class="gallery">
+        <img src="Skjermbilde 2026-02-20 103423.png">
+        <img src="Skjermbilde 2026-02-20 103505.png">
+        <img src="Skjermbilde 2026-02-20 110133.png" alt="">
+    </div>
+</section>
+
+<section id="matematikk">
+    <h2>Matematikk</h2>
+ <div class="gallery">
+     
+ <img src="Skjermbilde 2026-01-22 090712.png">
     
 </div>
+
+    <p>I matte reknar vi areal, omkrins og ulike oppgåver.</p>
+</section>
+
+<section id="gym">
+    <h2>Gym</h2>
+    <p>I gymmen trener vi og har ulike treningsaktivitetar.</p>
     
+
+
+    </div>
+</section>
+
+<footer>
+© 2026 Farouk Mohamad Albitar
+</footer>
+
 </body>
 </html>

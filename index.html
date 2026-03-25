@@ -6,6 +6,7 @@
 <title>Min portefølgje - Farouk Mohamad Albitar</title>
 
 <style>
+
 body{
     margin:0;
     font-family: Arial, sans-serif;
@@ -68,6 +69,51 @@ footer{
     color:white;
     margin-top:40px;
 }
+
+/* --- Nyhetssak CSS --- */
+.news-box {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.news-box h1,
+.news-box h2,
+.news-box h3 {
+    color: #1a4d8f;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.news-box h1 {
+    font-size: 30px;
+}
+
+.news-box h2 {
+    font-size: 24px;
+}
+
+.news-box h3 {
+    font-size: 20px;
+}
+
+.news-box p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.news-box a {
+    color: #1a4d8f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.news-box a:hover {
+    text-decoration: underline;
+}
 </style>
 </head>
 
@@ -84,9 +130,10 @@ footer{
     <a href="#engelsk">Engelsk</a>
     <a href="#naturfag">Naturfag</a>
     <a href="#konsept">Konseptutvikling</a>
-    <a href="#yff">YFF</a>
-    <a href="#matematikk">Matematikk</a>
-    <a href="#gym">Gym</a>
+    <a href="#YFF">YFF</a>
+    <a href="#Matematikk">Matematikk</a>
+    <a href="#Gym">Gym</a>
+    
 </nav>
 
 <section id="teknologi">
@@ -98,7 +145,7 @@ footer{
     </div>
 </section>
 
-<section id="produksjon">
+<section id="produksjon"> 
     <h2>Produksjon og Historiefortelling</h2>
     <p>Her viser eg arbeid eg har gjort i produksjon og historiefortelling.</p>
     <div class="gallery">
@@ -112,15 +159,11 @@ footer{
 <section id="engelsk">
     <h2>Engelsk</h2>
     <p>I engelsk har vi jobba med New Zealand og UK og oppgåver.</p>
-    
-    </div>
 </section>
 
 <section id="naturfag">
     <h2>Naturfag</h2>
     <p>I naturfag hadde vi VR-brille plakat, forsøk og skreiv rapport.</p>
-   
-    </div>
 </section>
 
 <section id="konsept">
@@ -138,33 +181,157 @@ footer{
     <div class="gallery">
         <img src="Skjermbilde 2026-02-20 103423.png">
         <img src="Skjermbilde 2026-02-20 103505.png">
-        <img src="Skjermbilde 2026-02-20 110133.png" alt="">
+        <img src="Skjermbilde 2026-02-20 110133.png">
     </div>
 </section>
 
 <section id="matematikk">
     <h2>Matematikk</h2>
- <div class="gallery">
-     
- <img src="Skjermbilde 2026-01-22 090712.png">
-    
-</div>
-
-    <p>I matte reknar vi areal, omkrins og ulike oppgåver.</p>
+    <div class="gallery">
+        <img src="Skjermbilde 2026-01-22 090712.png" height="50px">
+    </div>
+    <p>I matte reknar vi areal, omkrins og ulike oppgåver og rekna på excel.</p>
 </section>
 
 <section id="gym">
     <h2>Gym</h2>
     <p>I gymmen trener vi og har ulike treningsaktivitetar.</p>
-    
-
-
-    </div>
 </section>
 
-<footer>
-© 2026 Farouk Mohamad Albitar
-</footer>
+
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="UTF-8">
+<title>Nyhetssak</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 40px;
+        background-color: #f5f5f5;
+        color: #222;
+    }
+
+    h1 {
+        font-size: 32px;
+        color: #1a4d8f;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+        color: #1a4d8f;
+        margin-top: 30px;
+    }
+
+    h3 {
+        font-size: 20px;
+        color: #1a4d8f;
+        margin-top: 20px;
+    }
+
+    p {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .box {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        display: none; 
+    }
+
+    button {
+        padding: 12px 20px;
+        font-size: 18px;
+        background-color: #1a4d8f;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-bottom: 20px;
+       
+    }
+
+    button:hover {
+        background-color: #003366;
+    }
+
+    a {
+        color: #1a4d8f;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+</style>
+</head>
+
+<body>
+
+<h1>Nyhetssak</h1>
+
+
+<button onclick="visSaken()">Vis nyhetssaken</button>
+
+
+<div id="nyhetssak">
+    <div class="box">
+        <h2>Nyhetssak</h2>
+        <p>Tidligere MI6‑sjef: Iran har overtaket i krigen</p>
+        <p>Den tidligere MI6‑sjefen Alex Younger sier at Iran er sterkere enn USA og Israel. Dette til tross for luftangrep. Iran kontrollerer deler av Hormuzstredet. De bruker droner og blokader. Younger sier at Iran tåler sanksjoner bedre enn andre. Regimet er fortsatt brutalt, men svekket.</p>
+
+        <h3>Kvifor velgte eg denne saken</h3>
+        <p>Eg valgte denne saken fordi den handler om politikk og krig.</p>
+        <p>Eg synes det er interessant å se hvordan eksperter vurderer situasjonen.</p>
+        <p>Saken er lett å forstå og lærerik.</p>
+    </div>
+
+    <div class="box">
+        <h2>Vær Varsom plakaten</h2>
+        <p>3.2 Kildekritikk: Saken viser flere sider av konflikten.</p>
+        <p>4.1 Saklighet: Saken er skrevet saklig og rolig.</p>
+    </div>
+
+    <div class="box">
+        <h2>Vanskelig punkt for journalisten</h2>
+        <p>4.14 Samtidig svar: Det kan være vanskelig å la alle parter svare samtidig.</p>
+    </div>
+
+    <div class="box">
+        <h2>Refleksjon</h2>
+        <p>Journalisten prøver å være rettferdig.</p>
+        <p>Begge sider får komme til orde.</p>
+        <p>Språket er enkelt og lett å forstå.</p>
+        <p>Dette gjør saken tydelig.</p>
+        <p>Leseren får fakta uten overdrivelser.</p>
+    </div>
+
+    <div class="box">
+        <h2>Kilde</h2>
+        <p><a href="https://www.vg.no/nyheter/i/0ppQvo/tidligere-mi6-sjef-iran-har-overtaket-i-krigen" target="_blank">
+        Tidligere MI6-sjef: Iran har overtaket i krigen – VG</a></p>
+    </div>
+</div>
+
+<script>
+    function visSaken() {
+        
+        const bokser = document.querySelectorAll('#nyhetssak .box');
+        bokser.forEach(b => {
+            b.style.display = 'block'; 
+        });
+
+        
+        document.querySelector('button').style.display = 'none';
+    }
+</script>
 
 </body>
 </html>
